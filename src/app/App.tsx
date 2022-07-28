@@ -1,11 +1,14 @@
 import React from 'react';
-import 'theme/App.css';
+import AppTemplate from 'templates/AppTemplate';
+import { Wrapper, Title, Description } from './AppElements';
 
 const App = () => (
-  <div className="App">
-    <h1>Create React App TS</h1>
-    <p>The site is ready to work with TypeScript!</p>
-  </div>
+  <AppTemplate>
+    <Wrapper>
+      <Title>Create React App TS</Title>
+      <Description>The site is ready to work with TypeScript!</Description>
+    </Wrapper>
+  </AppTemplate>
 );
 
 export default App;
